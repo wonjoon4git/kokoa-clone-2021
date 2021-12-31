@@ -25,6 +25,7 @@
   position: absolute;
   left: 10px;
   bottom: 7px;
+  animation: notificationAnimation 2s ease-in-out infinite;
 }
 
 .nav__simple-notification {
@@ -38,4 +39,29 @@
   position: absolute;
   left: 20px;
   bottom: 15px;
+}
+
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-2.5px);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes appearBtnAnimation {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1s;
+  }
+}
+.nav__list {
+  animation: appearBtnAnimation 0.7s ease-in-out;
 }
