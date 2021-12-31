@@ -24,21 +24,18 @@
       </div>
     </div>
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">More</h1>
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
         <span><i class="fas fa-music fa-lg"></i></span>
-        <span
-          ><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a
-        ></span>
+        <span class="nav__link"><a href="settings.html">
+          <div class="nav__simple-notification"></div>
+          <i class= "fas fa-cog fa-lg"></i></a>
+        </span>
       </div>
     </header>
-    <a id="friends-display-link"
-      ><i class="fas fa-info-circle"></i> Friends' Names Display
-      <i class="fas fa-chevron-right fa-xs"></i
-    ></a>
 
-    <main class="friends-screen">
+    <main class="main-screen more-screen">
       <div class="user-component">
         <!--.user-component__column*2-->
         <div class="user-component__column">
@@ -48,33 +45,41 @@
           />
           <div class="user-component__text">
             <h4 class="user-component__title">Elon</h4>
-            <!--<h6 class="user-component__subtitle">wdfsdf</h6>-->
+            <h6 class="user-component__subtitle">+1 010 2144 3684</h6>
           </div>
         </div>
-        <div class="user-component__column"></div>
+        <div class="user-component__column">
+          <div>
+            <span>info</span> <i class="fas fa-chevron-right fa-xs"></i>
+          </div>
+        </div>
       </div>
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
-          <span>Channel</span>
-          <i class="fas fa-chevron-up fa-xs"></i>
+      <div class="icon-row">
+        <div class="icon-row__icon">
+            <i class="far fa-calendar"></i></i><span>Calendar</span>
         </div>
-        <div class="user-component">
-          <!--.user-component__column*2-->
-          <div class="user-component__column">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png"
-              class="user-component__avatar user-component__avatar--sm"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
-                Tesla
-              </h4>
-              <!--<h6 class="user-component__subtitle">wdfsdf</h6>-->
+        <div class="icon-row__icon">
+            <i class="fas fa-box"></i><span>Emoticons</span>
+        </div>
+        <div class="icon-row__icon">
+            <i class="fas fa-paint-roller"></i><span>Themes</span>
+        </div>
+        <div class="icon-row__icon">
+            <i class="fas fa-receipt"></i><span>Account</span>
+        </div>
+        
+      </div>
+      <div class="more-suggestions">
+        <h4 class="more-sugesstions__title">Suggestions</h4>
+        <div class="more-suggestions__icons">
+            <div class="more-suggestions__icon">
+                <div class="more-suggestions__icon-image"><i class="fas fa-quote-right"></i></div>
+                <span class="more-suggestions__icon-text">Kokoa story</span>
             </div>
-          </div>
-          <div class="user-component__column">
-            <div><span>2</span> <i class="fas fa-chevron-right fa-xs"></i></div>
-          </div>
+            <div class="more-suggestions__icon">
+                <div class="more-suggestions__icon-image"><i class="fas fa-exclamation"></i></div>
+                <span class="more-suggestions__icon-text">Kokoalert</span>
+            </div>
         </div>
       </div>
     </main>
@@ -83,7 +88,7 @@
       <ul class="nav__list">
         <li class="nav__btn">
           <a class="nav__link" href="friends.html"
-            ><i class="fas fa-user fa-lg"></i
+            ><i class="far fa-user fa-lg"></i
           ></a>
         </li>
         <li class="nav__btn">
